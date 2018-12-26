@@ -1,0 +1,52 @@
+<header class="h-100">
+  <mdb-navbar SideClass="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar intro-fixed-nav"
+    [containerInside]="false">
+    <mdb-navbar-brand>
+      <a class="logo navbar-brand" href="#">
+        <strong>
+          <mdb-icon icon="angellist"></mdb-icon>
+        </strong>
+      </a>
+    </mdb-navbar-brand>
+    <links>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active waves-light" mdbWavesEffect>
+          <a class="nav-link">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item waves-light" mdbWavesEffect>
+          <a class="nav-link">Link</a>
+        </li>
+        <li class="nav-item waves-light" mdbWavesEffect>
+          <a class="nav-link">Profile</a>
+        </li>
+      </ul>
+    </links>
+  </mdb-navbar>
+  <!-- Main -->
+  <div class="view intro-2" style="">
+    <div class="full-bg-img">
+      <div class="mask flex-center">
+        <div class="container text-center white-text wow fadeInUp">
+          <h2>374 780 petites annonces</h2>
+          <br>
+          <h1>Les petites annonces du 972</h1>
+          <h3>Voitures, motos, immobiliers, multimédia, maison ...</h3>
+          <br>
+          <p>
+            <mdb-icon *ngFor="let icon of iconsList" icon="{{icon}}"></mdb-icon>
+          </p>
+          <button mdbBtn type="button" gradient="peach" rounded="true" class="waves-light" mdbWavesEffect>Petites
+            annonces</button>
+          <button mdbBtn type="button" gradient="blue" rounded="true" class="waves-light" mdbWavesEffect>Déposer
+            annonce</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.Main -->
+</header>
+<!--Main Navigation-->
+<app-main-carousel></app-main-carousel>
+

@@ -8,10 +8,14 @@ import { MDBSpinningPreloader } from 'ng-uikit-pro-standard';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MainNavComponent } from './main-nav/main-nav.component';
+import { MainCarouselComponent } from './main-carousel/main-carousel.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MainNavComponent,
+    MainCarouselComponent
   ],
   imports: [
     BrowserModule,
