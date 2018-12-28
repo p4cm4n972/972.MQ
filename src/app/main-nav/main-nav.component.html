@@ -11,21 +11,46 @@
     <links>
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active waves-light" mdbWavesEffect>
-          <a class="nav-link">Home
-            <span class="sr-only">(current)</span>
+          <a mdbBtn floating="true" size="sm" gradient="aqua" mdbWavesEffect [routerLink]="['/admin/signup']" routerLinkActive="router-link-active" >
+            <i class="fa fa-sign-in"></i>
+          </a>
+        </li>
+        <li class="nav-item active waves-light" mdbWavesEffect>
+            <a mdbBtn floating="true" size="sm" gradient="aqua" mdbWavesEffect [routerLink]="['/admin/login']" routerLinkActive="router-link-active" >
+              <i class="fa fa-user white-text"></i>
+            </a>
+          </li>
+        <!-- BOUTONS SUPPLEMENTAIRES A DEFINIR (au besoin) -->
+        <!-- <li class="nav-item waves-light" mdbWavesEffect>
+          <a mdbBtn floating="true" size="sm" gradient="purple" mdbWavesEffect>
+            <mdb-icon icon="bolt"></mdb-icon>
           </a>
         </li>
         <li class="nav-item waves-light" mdbWavesEffect>
-          <a class="nav-link">Link</a>
-        </li>
-        <li class="nav-item waves-light" mdbWavesEffect>
-          <a class="nav-link">Profile</a>
-        </li>
+          <a mdbBtn floating="true" size="sm" gradient="purple" mdbWavesEffect>
+            <mdb-icon icon="bolt"></mdb-icon>
+          </a>
+        </li> -->
       </ul>
+      <ul class="nav justify-content-end ">
+        <li class="nav-item">
+          <a type="button" mdbBtn floating="true" size="sm" class="btn-fb waves-light" mdbWavesEffect><i class="fa fa-facebook"></i></a>
+        </li>
+        <li class="nav-item">
+          <a type="button" mdbBtn floating="true" size="sm" class="btn-tw waves-light" mdbWavesEffect><i class="fa fa-twitter"></i></a>
+        </li>
+        <li class="nav-item">
+          <a type="button" mdbBtn floating="true" size="sm" class=" btn-ins waves-light" mdbWavesEffect><i class="fa fa-instagram"></i></a>
+        </li>
+        <li class="nav-item">
+          <a type="button" mdbBtn floating="true" size="sm" class=" btn-yt waves-light" mdbWavesEffect><i class="fa fa-youtube"></i></a>
+        </li>
+    </ul>
     </links>
+    
   </mdb-navbar>
   <!-- Main -->
-  <div class="view intro-2" style="">
+  <div class="view intro-2">
     <div class="full-bg-img">
       <div class="mask flex-center">
         <div class="container text-center white-text wow fadeInUp">
@@ -48,5 +73,5 @@
   <!-- /.Main -->
 </header>
 <!--Main Navigation-->
-<app-main-carousel></app-main-carousel>
+
 
