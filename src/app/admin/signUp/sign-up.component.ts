@@ -35,7 +35,6 @@ export class SignUpComponent implements OnInit {
 
 
     signUp(validatingRegister) {
-        console.log(validatingRegister.password1)
         if (validatingRegister.password1 !== validatingRegister.password2) {
             this.passwordFail = true;
         } else {

@@ -22,8 +22,9 @@ export class LoginComponent implements OnInit {
             password1: new FormControl(null, Validators.required)
         });
     }
-    login() {
-        this._userSVC.login(this.email, this.password1);
+    login(validatingLogin) {
+        console.log('login');
+        this._userSVC.login(validatingLogin.email, validatingLogin.password1);
         this._userSVC.verifyUser();
     }
 
