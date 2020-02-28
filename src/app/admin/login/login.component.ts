@@ -23,7 +23,6 @@ export class LoginComponent implements OnInit {
         });
     }
     login(validatingLogin) {
-        console.log('login');
         this._userSVC.login(validatingLogin.email, validatingLogin.password1);
         this._userSVC.verifyUser();
     }

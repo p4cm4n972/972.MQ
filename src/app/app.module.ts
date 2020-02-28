@@ -1,10 +1,10 @@
-import { BrowserModule } from '@angular/platform-browser';
 /**
  * MDB Angular
  */
 import { MDBBootstrapModulesPro } from 'ng-uikit-pro-standard';
 import { MDBSpinningPreloader } from 'ng-uikit-pro-standard';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
 
 import { AppRoutingModule } from './app-routing.module';
